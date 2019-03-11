@@ -1,0 +1,65 @@
+@media (max-width: 1100px) {
+
+    aside {
+        width: 20%
+    }
+    .mainContent {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* показываем кнопку для переключения верхней навигации */
+    .nav-toggle {
+        display: block;
+    }
+    header {
+        padding: 10px 0;
+    }
+    /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+    #menu {
+        max-height: 0;
+        background: white;
+        float: none;
+        position: absolute;
+        overflow: hidden;
+        top: 63px;
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+    }
+    /* делаем элементы списка блочными, чтобы они располагались друг под другом */
+    #menu li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #EBEBE3;
+        margin-right: 0;
+    }
+    /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+    .mainContent,
+    aside {
+        width: 100%;
+        float: left;
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    /* позиционируем меню на увеличившуюся высоту шапки */
+    #menu {
+        top: 118px;
+    }
+    /* отменяем обтекание для столбцов подвала страницы */
+    .col-footer{
+        float: none;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .col-footer:last-child {
+        text-align: center;
+        margin-bottom: 0;
+    }
+}

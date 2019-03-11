@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="containerMenu">
+            <div id="mobMenu" class="nav-toggle"><span></span></div>
+            <ul id="menu" class="nav nav-tabs">
+                <li class=""><a class="" href="/">Link 1</a></li>
+                <li class=""><a class="" href="#">Link 2</a></li>
+                <li class=""><a class="" href="#">Link 3</a></li>
+                <li class=""><a class="" href="#">Link 4</a></li>
+                <li class=""><a class="" href="#">Link 5</a></li>
+                <li class=""><a class="" href="#">Link 6</a></li>
+                <li class="" id="time" style="color: #fff;"><span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="pageWrapper" class="container">
+        <aside id="sidebar">
+            <ul>
+                <li id="sizeWindow" style="color: #0717f5; font-weight: 600;"></li>
+                <li class="itemSitebar" id="HWTable">HW 13 create table</li>
+                <li class="itemSitebar" id="HWSlider">HW create slider</li>
+                <li class="itemSitebar" id="threeBtns">HW 3 buttons</li>
+                <li class="itemSitebar">homework 16</li>
+                <li class="itemSitebar">homework 17</li>
+                <li class="itemSitebar">homework 18</li>
+                <li class="itemSitebar">homework 19</li>
+                <li class="itemSitebar">homework 20</li>
+                <li class="itemSitebar">homework 21</li>
+            </ul>
+        </aside>
+        <main id="main" class="mainContent">
+            <div id="firstContent">
+                <img src="img/image.png" />
+            </div>
+            <!-- create table   -->
+            <div id="tabCreate">
+                <form>
+                    <input type="text" id="cols" placeholder="введите число колонок">
+                    <input type="text" id="rows" placeholder="введите число столбцов">
+                    <input type="button" onclick="createTable()" value="Create the table">
+                </form>
+                <table id="myTable" border="1">
+                </table>
+            </div>
+            <!--            end table     -->
+            <!--           three buttons     -->
+            <div id="buttons">
+                <label>
+                 <input id="my_btn_one" class="btnGreen" value="button red" type="button"/ >
+            </label>
+                <label>
+                 <input id="my_btn_two" class="btnGreen" value="button pink" type="button" />
+            </label>
+                <label>
+                 <input id="my_btn_three" class="btnGreen" value="button blue" type="button" />
+            </label>
+
+
+
+
+            </div>
+            <!--     end three buttons -->
+            <!--     create slider -->
+            <div id="sliderWraper">
+                <img id="slideItem" src="img/someImg1.jpg" alt="">
+                <div class="arrows">
+                    <a class="arrow" id="next">Next</a>
+                    <a class="arrow" id="prev">Preview</a>
+                </div>
+            </div>
+            <!--            end slider     -->
+        </main>
+
+    </div>
+    <footer class="footer row">
+        <div class="col-footer col-md-4">
+            <p style="color:#0717f5; font-weight: 600;">date now is: <span id="date"></span></p>
+        </div>
+        <div class="col-footer col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-footer col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="col-footer col-md-4">
+            <p>You are here <span style="color: #0717f5; font-weight: 600;" id="timerId"></span> seconds</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/cache.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/threeBtn.js"></script>
+
+</body>
+
+</html>
